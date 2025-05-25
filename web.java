@@ -9,11 +9,11 @@ import com.sun.net.httpserver.HttpExchange;
 public class web {
     public static void main(String[] args) throws IOException {
         // Start an HTTP server
-        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress("172.174.1.112", 9090), 0);
         server.createContext("/start", new StartSwingHandler());
         server.setExecutor(null);
         server.start();
-        System.out.println("Server running on http://localhost:8080/start");
+        System.out.println("Server running on http://172.174.1.112:8080/start");
     }
     
     static class StartSwingHandler implements HttpHandler {
