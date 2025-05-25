@@ -1,0 +1,12 @@
+# Java Integration Notes
+
+Project: Jenkins Pipeline for Java
+Technology Used:
+- Java Backend (Spring Boot, Servlets)
+- JavaScript Frontend (Fetch API)
+- Jenkins CI/CD Pipeline
+
+Workflow:
+1. Java backend listens on port 8080.
+2. JavaScript frontend fetches data from Java.
+3. Jenkins automates deployment after a Git push.
