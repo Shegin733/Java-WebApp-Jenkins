@@ -34,7 +34,7 @@
 
     <script>
         function startJavaApp() {
-            fetch('http://localhost:8080/start')
+            fetch('http://174.172.1.112:9090/')
                 .then(response => response.text())
                 .then(data => alert(data))
                 .catch(error => console.error('Error:', error));

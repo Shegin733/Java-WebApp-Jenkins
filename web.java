@@ -13,7 +13,7 @@ public class web {
         server.createContext("/start", new StartSwingHandler());
         server.setExecutor(null);
         server.start();
-        System.out.println("Server running on http://172.174.1.112:8080/start");
+        System.out.println("Server running on http://172.174.1.112:9090/start");
     }
     
     static class StartSwingHandler implements HttpHandler {
